@@ -1,11 +1,12 @@
-<html>
-<head>
-	<title>Tony Pacheco</title>
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-</head>
-<body>
-	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="tony-pacheco"><a class="LI-simple-link" href='https://ca.linkedin.com/in/tony-pacheco?trk=profile-badge'><img src="Logos/LinkedinLogo.png"></a></div>
-	<a href="https://github.com/TonyPacheco"><img src = "Logos/GitHubLogo.png"></a>
-
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- create your content here. just a box for now -->
+    <a-text value="Hello, World!"></a-text>
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
 </body>
-</html>
