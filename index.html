@@ -2,8 +2,11 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-      <a-marker type='barcode' value='5'>
-		    <a-box position='0 1 0' material='opacity: 0.75;'></a-box>
-      </a-marker>
-		<a-camera></a-camera>
+        <a-marker type='barcode' value='5'>
+        	<a-box position='0 1 0' material='opacity: 0.75;'></a-box>
+        </a-marker>
+	<a-marker type="pattern" url="virtro.patt">
+		<a-box position='0 1 0' material='opacity: 0.75;'></a-box>
+	<a-marker>
+        <a-camera></a-camera>
 </body>
