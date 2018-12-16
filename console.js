@@ -70,13 +70,13 @@ function showListOfCommands() {
 }
 
 function showAsciiResume() {
-
+    writeToConsole("WIP");
 }
 
 function showSeekNSolve() {
-
+    writeToConsole("WIP");
 }
 
 function showMealio() {
-
+    writeToConsole("WIP");
 }
