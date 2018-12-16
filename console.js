@@ -39,6 +39,14 @@ function validateCommand(text) {
         showMealio();
         return;
     } 
+    if(checkText === "linkedin") {
+        window.location.href = "https://www.linkedin.com/in/tony-pacheco";
+        return;
+    } 
+    if(checkText === "github") {
+        window.location.href = "https://github.com/TonyPacheco";
+        return;
+    } 
     commandNotFound(text);
 }
 
@@ -54,9 +62,11 @@ function commandNotFound(text) {
 
 function showListOfCommands() {
     writeToConsole("");
-    writeToConsole("RESUME   see Tony's resume");
-    writeToConsole("SNSAPP   Seek N Solve Android app");
-    writeToConsole("MEALIO   Food management web app");
+    writeToConsole("RESUME     See Tony's resume");
+    writeToConsole("SNSAPP     Seek N Solve Android app");
+    writeToConsole("MEALIO     Food management web app");
+    writeToConsole("LINKEDIN   Visit Tony's LinkedIn profile");
+    writeToConsole("GITHUB     Visit Tony's GitHub profile");
 }
 
 function showAsciiResume() {
