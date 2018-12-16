@@ -55,7 +55,7 @@ function validateCommand(text) {
         return;
     }
     if(checkText === "exit") {
-        writeToConsole(0, "redirecting to boring version of the site");
+        writeToConsole(0, "redirecting to the boring version of the site");
         window.location.href = "";
         return;
     }
