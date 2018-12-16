@@ -40,11 +40,11 @@ function validateCommand(text) {
         return;
     } 
     if(checkText === "linkedin") {
-        window.location.href = "https://www.linkedin.com/in/tony-pacheco";
+        window.open("https://www.linkedin.com/in/tony-pacheco");
         return;
     } 
     if(checkText === "github") {
-        window.location.href = "https://github.com/TonyPacheco";
+        window.open("https://github.com/TonyPacheco");
         return;
     } 
     commandNotFound(text);
