@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+#terminal {
+    background-color: black;
+    margin: auto;
+    width: 65%;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+#output {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+
+#output::selection {
+    color:yellow;
+}
+
+#input {
+    background-color: black;
+    width: 100%;
+    color: white;
+}
