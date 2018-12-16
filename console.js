@@ -40,10 +40,12 @@ function validateCommand(text) {
         return;
     } 
     if(checkText === "linkedin") {
+        writeToConsole("opening in a new tab");
         window.open("https://www.linkedin.com/in/tony-pacheco");
         return;
     } 
     if(checkText === "github") {
+        writeToConsole("opening in a new tab");
         window.open("https://github.com/TonyPacheco");
         return;
     } 
