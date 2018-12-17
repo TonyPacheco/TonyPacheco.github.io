@@ -55,13 +55,17 @@ function validateCommand(text) {
         window.open("https://github.com/TonyPacheco");
         return;
     } 
+    if(checkText === "swords") {
+        writeToConsole(0, "opening in a new tab");
+        window.open("https://www.instagram.com/_tonypacheco/");
+        return;
+    }
     if(checkText === "clear") {
         lines.innerHTML = ">clear";
         return;
     }
     if(checkText === "exit") {
-        writeToConsole(0, "redirecting to the boring version of the site");
-        window.location.href = "";
+        exitConsole();
         return;
     }
     commandNotFound(text);
@@ -87,7 +91,8 @@ function showListOfCommands() {
     writeToConsole(0, "MEALIO    Food management web app");
     writeToConsole(0, "LINKEDIN  Visit Tony's LinkedIn profile");
     writeToConsole(0, "GITHUB    Visit Tony's GitHub profile");
-    writeToConsole(0, "CLEAR     Clears the screen")
+    writeToConsole(0, "SWORDS    See Tony's other hobby");
+    writeToConsole(0, "CLEAR     Clears the screen");
     writeToConsole(0, "EXIT      Visit Tony's 'regular' site");
 }
 
@@ -101,4 +106,10 @@ function showSeekNSolve() {
 
 function showMealio() {
     writeToConsole(0, "WIP");
+}
+
+function exitConsole() {
+    /*writeToConsole(0, "redirecting to the boring version of the site");*/
+    /*window.location.href = "";*/
+    writeToConsole(0, "lol jk");
 }
