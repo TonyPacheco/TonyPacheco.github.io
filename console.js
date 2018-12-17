@@ -6,6 +6,7 @@ function intro() {
     writeToConsole(0, "You can type 'help' for a list of commands");
     writeToConsole(0, "or 'exit' if you don't love terminals like Tony");
     writeToConsole(0, "(c) Tony Pacheco 2018");
+    input.focus();
 }
 
 input.addEventListener("keyup", function(event) {
@@ -14,6 +15,10 @@ input.addEventListener("keyup", function(event) {
         writeToConsole(1, userInput);
         validateCommand(userInput);
     }
+});
+
+terminal.addEventListener("click", function(event){
+    input.focus();
 });
 
 function getUserInput() {
@@ -77,13 +82,13 @@ function commandNotFound(text) {
 
 function showListOfCommands() {
     writeToConsole(0, "");
-    writeToConsole(0, "RESUME     See Tony's resume");
-    writeToConsole(0, "SNSAPP     Seek N Solve Android app");
-    writeToConsole(0, "MEALIO     Food management web app");
-    writeToConsole(0, "LINKEDIN   Visit Tony's LinkedIn profile");
-    writeToConsole(0, "GITHUB     Visit Tony's GitHub profile");
-    writeToConsole(0, "CLEAR      Clears the screen")
-    writeToConsole(0, "EXIT       Visit Tony's 'regular' site");
+    writeToConsole(0, "RESUME    See Tony's resume");
+    writeToConsole(0, "SNSAPP    Seek N Solve Android app");
+    writeToConsole(0, "MEALIO    Food management web app");
+    writeToConsole(0, "LINKEDIN  Visit Tony's LinkedIn profile");
+    writeToConsole(0, "GITHUB    Visit Tony's GitHub profile");
+    writeToConsole(0, "CLEAR     Clears the screen")
+    writeToConsole(0, "EXIT      Visit Tony's 'regular' site");
 }
 
 function showAsciiResume() {
