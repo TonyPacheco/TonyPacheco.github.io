@@ -2,12 +2,18 @@ body {
     background-color: black;
 }
 
-#terminal {
+.terminal {
     background-color: black;
     margin: auto;
     width: 65%;
     border: 3px solid white;
     padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .terminal {
+      width: 95%;
+    }
 }
 
 #output {
