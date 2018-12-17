@@ -1,15 +1,15 @@
 body {
     font-family: monospace;
     background-color: black;
-    color: white;
+    color: #21b0f3;
     margin-top: 35px;
 }
 
 #terminal {
-    background-color: black;
+    background-color: #020f13;
     margin: auto;
     width: 60%;
-    border: 3px solid white;
+    border: 3px solid grey;
     padding: 10px;
 }
 
@@ -20,9 +20,9 @@ body {
 }
 
 #output {
-    background-color: black;
+    background-color: #020f13;
     font-family: monospace;
-    color: white;
+    color:#21b0f3;
     border: none;
     width: 100%;
     resize: none;
@@ -43,9 +43,9 @@ label {
 
 #input {
     font-family: monospace;
-    background-color: black;
+    background-color: #020f13;
     width: 95%;
-    color: white;
+    color: #21b0f3;
     border: none;
 }
 
