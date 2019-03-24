@@ -37,12 +37,14 @@ function validateCommand(text) {
         showAsciiResume();
         return;
     }
-    if(checkText === "snsapp") {
-        showSeekNSolve();
+    if(checkText === "hema-app") {
+        writeToConsole(0, "opening in a new tab");
+        window.open("https://github.com/TonyPacheco/NoDoubles");
         return;
     }
     if(checkText === "mealio") {
-        showMealio();
+        writeToConsole(0, "opening in a new tab");
+        window.open("http://mealio.tk");
         return;
     } 
     if(checkText === "linkedin") {
@@ -87,7 +89,7 @@ function commandNotFound(text) {
 function showListOfCommands() {
     writeToConsole(0, "");
     writeToConsole(0, "RESUME    See Tony's resume");
-    writeToConsole(0, "SNSAPP    Seek N Solve Android app");
+    writeToConsole(0, "HEMA-APP  Tournament Assistant Android app");
     writeToConsole(0, "MEALIO    Food management web app");
     writeToConsole(0, "LINKEDIN  Visit Tony's LinkedIn profile");
     writeToConsole(0, "GITHUB    Visit Tony's GitHub profile");
@@ -97,14 +99,6 @@ function showListOfCommands() {
 }
 
 function showAsciiResume() {
-    writeToConsole(0, "WIP");
-}
-
-function showSeekNSolve() {
-    writeToConsole(0, "WIP");
-}
-
-function showMealio() {
     writeToConsole(0, "WIP");
 }
 
