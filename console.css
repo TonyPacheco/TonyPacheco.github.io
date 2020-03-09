@@ -1,0 +1,47 @@
+body {
+    background-color:#010a0c;
+    color: #21b0f3;
+    margin-top: 35px;
+}
+
+#terminal {
+    font-family: monospace;
+    background-color: #020f13;
+    margin: auto;
+    border: 3px solid grey;
+    padding: 10px;
+}
+
+#output {
+    background-color: #020f13;
+    font-family: monospace;
+    color:#21b0f3;
+    border: none;
+    width: 100%;
+    resize: none;
+    height: 200px;
+}
+
+#output::selection {
+    color: none;
+}
+
+#output:focus {
+    outline-width: 0;
+}
+
+label {
+    display: inline;
+}
+
+#input {
+    font-family: monospace;
+    background-color: #020f13;
+    width: 95%;
+    color: #21b0f3;
+    border: none;
+}
+
+#input:focus {
+    outline-style: none;
+}

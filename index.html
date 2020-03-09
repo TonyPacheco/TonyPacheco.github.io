@@ -1,14 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TonyPacheco</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
-<body style="background-color: #010a0c">
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.028cd7b34f90d45cd765.js"></script></body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="console.css">
+		<title>Tony Pacheco</title>
+	</head>
+	<body class="container" onload="intro()">
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div id="terminal">
+					<div id="previousLines">
+						<textarea readonly id="output"></textarea>
+					</div>
+					<div id="inputLine">
+						<label for="input">></label><input type="text" id="input" />
+					</div>
+				</div>
+				<div id="aux" style="display:none;">
+					<pre class="text-center text-white" style="line-height: 18px;">
+╭──────────────────────────────────────────────────────╮
+│ Tony Pacheco - Software Developer                    │
+├──────────────────────────────────────────────────────┤
+│ Work Experience                                      │
+│                                                      │
+│ Virtro Entertainment   Backend/Database Developer    │
+│  Jun 2019 - Present    .NetCore API/MVC + MSSQL      │
+│                        Built API for game client     │
+│                        Design, Deployment, DevOps    │
+│                                                      │
+│ Virtro Entertainment   Unity VR Developer            │
+│  Jan 2018 - Sep 2018   OculusVR (Rift/Go) + SteamVR  │
+│                        Worked on multiple VR games   │
+│                        Helped port 'flat' game to VR │
+├╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┤
+│ Education                                            │
+│                                                      │
+│ BCIT CST w/Co-Op       Computer Systems Tech Diploma │
+│  2017 - 2019           Information Systems Option    │
+│                        Graduated with Distinction    │
+╰──────────────────────────────────────────────────────╯
+					</pre>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+		<script src="console.js"></script>
+	</body>
 </html>
