@@ -1,9 +1,21 @@
-╔══════════════════════════════╗
-║         Tony Pacheco         ║
-
-
-
-
-
-║                              ║
-╚══════════════════════════════╝
+╭──────────────────────────────────────────────────────╮
+│ Tony Pacheco - Software Developer                    │
+├──────────────────────────────────────────────────────┤
+│ Work Experience                                      │
+│                                                      │
+│ Virtro Entertainment   Backend/Database Developer    │
+│  Jun 2019 - Present    .NetCore API/MVC + MSSQL      │
+│                        Built API for game client     │
+│                        Design, Deployment, DevOps    │
+│                                                      │
+│ Virtro Entertainment   Unity VR Developer            │
+│  Jan 2018 - Sep 2018   OculusVR (Rift/Go) + SteamVR  │
+│                        Worked on multiple VR games   │
+│                        Helped port 'flat' game to VR │
+├╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┤
+│ Education                                            │
+│                                                      │
+│ BCIT CST w/Co-Op       Computer Systems Tech Diploma │
+│  2017 - 2019           Information Systems Option    │
+│                        Graduated with Distinction    │
+╰──────────────────────────────────────────────────────╯

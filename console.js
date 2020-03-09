@@ -1,11 +1,12 @@
 var input = document.getElementById("input");
 var lines = document.getElementById("output");
+var aux   = document.getElementById("aux");
 
 function intro() {
     lines.innerHTML = "Welcome to Tony Pacheco\'s personal website!";
     writeToConsole(0, "You can type 'help' for a list of commands");
     writeToConsole(0, "or 'exit' if you don't love terminals like Tony");
-    writeToConsole(0, "(c) Tony Pacheco 2018");
+    writeToConsole(0, "(c) Tony Pacheco " + new Date().getFullYear());
     input.focus();
 }
 
@@ -31,46 +32,39 @@ function validateCommand(text) {
     checkText = text.toLowerCase();
     if(checkText === "help") {
         showListOfCommands();
-        return;
     }
-    if(checkText === "resume") {
-        showAsciiResume();
-        return;
+    else if(checkText === "resume") {
+        toggleResume();
     }
-    if(checkText === "hema-app") {
-        writeToConsole(0, "opening in a new tab");
-        window.open("https://github.com/TonyPacheco/NoDoubles");
-        return;
+    else if(checkText === "hema-app") {
+        redirect("https://github.com/TonyPacheco/NoDoubles");
     }
-    if(checkText === "mealio") {
-        writeToConsole(0, "opening in a new tab");
-        window.open("http://mealio.tk");
-        return;
+    else if(checkText === "mealio") {
+        redirect("http://mealio.tk");
     } 
-    if(checkText === "linkedin") {
-        writeToConsole(0, "opening in a new tab");
-        window.open("https://www.linkedin.com/in/tony-pacheco");
-        return;
+    else if(checkText === "linkedin") {
+        redirect("https://www.linkedin.com/in/tony-pacheco");
     } 
-    if(checkText === "github") {
-        writeToConsole(0, "opening in a new tab");
-        window.open("https://github.com/TonyPacheco");
-        return;
+    else if(checkText === "github") {
+        redirect("https://github.com/TonyPacheco");
     } 
-    if(checkText === "swords") {
-        writeToConsole(0, "opening in a new tab");
-        window.open("https://www.instagram.com/_tonypacheco/");
-        return;
+    else if(checkText === "swords") {
+        redirect("https://www.instagram.com/_tonypacheco/");
     }
-    if(checkText === "clear") {
+    else if(checkText === "clear") {
         lines.innerHTML = ">clear";
-        return;
     }
-    if(checkText === "exit") {
+    else if(checkText === "exit") {
         exitConsole();
-        return;
     }
-    commandNotFound(text);
+    else{
+        commandNotFound(text);
+    }
+}
+
+function redirect(url){
+    writeToConsole(0, "opening in a new tab");
+    window.open(url);
 }
 
 function writeToConsole(isInput, text) {
@@ -88,7 +82,12 @@ function commandNotFound(text) {
 
 function showListOfCommands() {
     writeToConsole(0, "");
-    writeToConsole(0, "RESUME    See Tony's resume");
+    if (aux.style.display == 'none'){
+        writeToConsole(0, "RESUME    See Tony's resume");
+    }
+    else{
+        writeToConsole(0, "RESUME    Hide Tony's resume");
+    }
     writeToConsole(0, "HEMA-APP  Tournament Assistant Android app");
     writeToConsole(0, "MEALIO    Food management web app");
     writeToConsole(0, "LINKEDIN  Visit Tony's LinkedIn profile");
@@ -98,8 +97,8 @@ function showListOfCommands() {
     writeToConsole(0, "EXIT      Visit Tony's 'regular' site");
 }
 
-function showAsciiResume() {
-    writeToConsole(0, "WIP");
+function toggleResume() {
+    aux.style.display = (aux.style.display == 'none') ? 'block' : 'none';
 }
 
 function exitConsole() {

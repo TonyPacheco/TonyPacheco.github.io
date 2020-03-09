@@ -1,22 +1,15 @@
 body {
-    font-family: monospace;
     background-color:#010a0c;
     color: #21b0f3;
     margin-top: 35px;
 }
 
 #terminal {
+    font-family: monospace;
     background-color: #020f13;
     margin: auto;
-    width: 60%;
     border: 3px solid grey;
     padding: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-    #terminal {
-      width: 95%;
-    }
 }
 
 #output {
