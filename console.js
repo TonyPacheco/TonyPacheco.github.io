@@ -133,7 +133,7 @@ const processes = {
         },
         "STAR-LOG": {
             help: () => writeToConsole(0, "STAR-LOG  Astro-Photo session tracking app"),
-            exec: () => redirect("http://starlog.azurewebsites.net")
+            exec: () => redirect("http://app.starlog.online")
         },
         "LINKEDIN": {
             help: () => writeToConsole(0, "LINKEDIN  Visit my LinkedIn profile"),
@@ -152,7 +152,8 @@ const processes = {
             exec: () => redirect("mailto:tonypacheco.cillis@gmail.com")
         },
         "TPRQL": {
-            help: () => writeToConsole(0, "TPRQL     Start the TPRQL interpreditor"),
+            //help: () => writeToConsole(0, "TPRQL     Start the TPRQL interpretor"),
+            help: () => { },
             exec: () => startProcess("tprql")
         },
         "JS": {
